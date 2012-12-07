@@ -14,4 +14,11 @@
 //= require jquery_ujs
 //= require common
 //= require live-comment-preview
+//= require dancerjs/examples/lib/Three
+//= require dancerjs/examples/lib/Stats
+//= require dancerjs/examples/lib/Detector
+//= require dancerjs/plugins/dancer.fft
+//= require dancerjs/plugins/dancer.waveform
+//= require dancerjs/dancer
+// require_tree can include everything! require_tree .
 //= require_self

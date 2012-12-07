@@ -17,8 +17,9 @@ Enki::Application.routes.draw do
 
   resources :archives, :only => [:index]
   resources :pages, :only => [:show]
-
-  constraints :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ do
+  resources :dances, :only => [:index]
+  
+ constraints :year => /\d{4}/, :month => /\d{2}/, :day => /\d{2}/ do
     get ':year/:month/:day/:slug/comments'  => 'comments#index'
     post ':year/:month/:day/:slug/comments' => 'comments#create'
     get ':year/:month/:day/:slug/comments/new' => 'comments#new'
